@@ -1,20 +1,12 @@
-# WORK IN PROGRESS
-
-We're still baking this journey, come back in a few weeks to get something fully baked.
-
-<!--
-Replace these IDs with real ones once we have CI enabled
-[![Build Status](https://travis-ci.org/IBM/vr-speech-sandbox-vive.svg?branch=master)](https://travis-ci.org/IBM/vr-speech-sandbox-vive)
-![Bluemix Deployments](https://deployment-tracker.mybluemix.net/stats/5fd641e32af04e4adb16f26c46de3587/badge.svg)
--->
-
-## Virtual Reality Speech Sandbox
+# Create voice commands for VR experiences with Watson services
 
 In this developer journey we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) services.
 
+In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices and an ideal candidate for Speech interaction, selling roughly 2.1 million units in 2016.
+
 When the reader has completed this journey, they will understand how to:
 
-* ...
+* Add IBM Watson Speech-to-Text and Conversation to a Virtual Reality environment build in Unity.
 
 See the video below for an example:
 
