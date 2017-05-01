@@ -38,6 +38,7 @@ For more information about the project you can check out our [Case Study](https:
 * [HTC Vive](https://www.vive.com/us/product/)
 * [SteamVR](http://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
+* [Blender](https://www.blender.org/)
 
 ## 2. Create Bluemix services
 
