@@ -8,13 +8,9 @@ When the reader has completed this journey, they will understand how to:
 
 * Add IBM Watson Speech-to-Text and Conversation to a Virtual Reality environment build in Unity.
 
-See the video below for an example:
-
-[![](http://img.youtube.com/vi/FlMvLDw6cYc/0.jpg)](http://www.youtube.com/watch?v=FlMvLDw6cYc)
-
-For more information about the project you can check out our [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/). Or if you just want to play a built version with pre-loaded objects you can download the game on [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca).
-
 ![](doc/source/images/architecture.png)
+
+Want to take your Watson app to the next level? Looking to leverage Watson Brand assets? Join the [With Watson](https://www.ibm.com/watson/with-watson) program which provides exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 ## Included components
 
@@ -74,25 +70,15 @@ If you followed the previous steps you should already be inside your local clone
 
 # Sample output
 
-Add output when ready
-
-<!--
-Start a conversation with your bot:
-
-![](doc/source/images/convo_init.png)
-
-Add an item to your cart:
-
-![](doc/source/images/convo_add.png)
--->
+[![](http://img.youtube.com/vi/FlMvLDw6cYc/0.jpg)](http://www.youtube.com/watch?v=FlMvLDw6cYc)
 
 # Links
 
+* [Demo on Youtube](http://www.youtube.com/watch?v=FlMvLDw6cYc)
 * [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca)
 * [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
 * [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
-* [IBM Bluemix](https://www.ibm.com/cloud-computing/bluemix/)
 
 # License
 
