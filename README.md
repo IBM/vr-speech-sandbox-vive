@@ -31,7 +31,7 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 
 ## 1. Before You Begin
 
-* [IBM Bluemix Account](https://console.ng.bluemix.net/registration/)
+* [IBM Bluemix Account](http://ibm.biz/Bdimr6)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
 * [HTC Vive](https://www.vive.com/us/product/)
 * [SteamVR](http://store.steampowered.com/steamvr)
