@@ -67,8 +67,9 @@ If you followed the previous steps you should already be inside your local clone
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
  You can find your workspace ID by selecting the expansion menu on your conversation workspace and selecting `View details`.
     ![View Details Location](doc/source/images/workspace_details.png?raw=true)
-9. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
-10. Press Play
+9. Install [Blender](https://www.blender.org)
+10. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
+11. Press Play
 
 # Sample output
 
