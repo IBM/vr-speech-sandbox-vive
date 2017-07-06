@@ -6,6 +6,7 @@ using IBM.Watson.DeveloperCloud.DataTypes;
 using IBM.Watson.DeveloperCloud.Utilities;
 using IBM.Watson.DeveloperCloud.Services.Conversation.v1;
 using IBM.Watson.DeveloperCloud.Services.SpeechToText.v1;
+using FullSerializer;
 
 #pragma warning disable 414
 
@@ -20,6 +21,7 @@ public class VoiceSpawner : Widget {
 
     [SerializeField]
     private Input m_SpeechInput = new Input("SpeechInput", typeof(SpeechToTextData), "OnSpeechInput");
+    private fsSerializer _serializer = new fsSerializer();
 
     #region InitAndLifecycle
     //------------------------------------------------------------------------------------------------------------------
@@ -63,18 +65,32 @@ public class VoiceSpawner : Widget {
         }
     }
 
-    void OnMessage(MessageResponse resp, string customData)
+    void OnMessage(object resp, string customData)
     {
-        if (resp != null && (resp.intents.Length > 0 || resp.entities.Length > 0))
+        //  Convert resp to fsdata
+
+        fsData fsdata = null;
+        fsResult r = _serializer.TrySerialize(resp.GetType(), resp, out fsdata);
+        if (!r.Succeeded)
+            throw new WatsonException(r.FormattedMessages);
+
+        //  Convert fsdata to MessageResponse
+        MessageResponse messageResponse = new MessageResponse();
+        object obj = messageResponse;
+        r = _serializer.TryDeserialize(fsdata, obj.GetType(), ref obj);
+        if (!r.Succeeded)
+            throw new WatsonException(r.FormattedMessages);
+
+        if (resp != null && (messageResponse.intents.Length > 0 || messageResponse.entities.Length > 0))
         {
-            string intent = resp.intents[0].intent;
+            string intent = messageResponse.intents[0].intent;
             Debug.Log("Intent: " + intent);
             string currentMat = null;
             string currentScale = null;
             if (intent == "create")
             {
                 bool createdObject = false;
-                foreach (EntityResponse entity in resp.entities)
+                foreach (EntityResponse entity in messageResponse.entities)
                 {
                     Debug.Log("entityType: " + entity.entity + " , value: " + entity.value);
                     if (entity.entity == "material")
@@ -111,7 +127,7 @@ public class VoiceSpawner : Widget {
             } else if (intent == "screenshot")
             {
                 //Assumes is attached to the [CameraRig]
-                Camera camera = transform.parent.FindChild("Camera (eye)").GetComponent<Camera>();
+                Camera camera = transform.parent.Find("Camera (eye)").GetComponent<Camera>();
                 DemoScreen.takeScreenshot(camera);
             }
         } else
