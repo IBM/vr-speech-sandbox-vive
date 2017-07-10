@@ -77,7 +77,7 @@ If you followed the previous steps you should already be inside your local clone
 
 # Links
 
-* [Demo on Youtube](http://www.youtube.com/watch?v=FlMvLDw6cYc)
+* [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
 * [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca)
 * [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
 * [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
