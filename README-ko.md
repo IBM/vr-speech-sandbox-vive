@@ -67,8 +67,8 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 7. 설정(configuration) 창에서 `Advanced Mode`를 선택합니다.
 8. `Add Variable` 를 클릭하고 새 변수에 `ConversationV1_ID` 라고 이름을 지정한 다음 값을 Conversation 워크스페이스의 Workspace ID로 설정합니다.
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
- 워크스페이스 ID는 Conversation 워크스페이스에서 확장 메뉴(expansion menu)를 선택하고 `View details`.
-    ![View Details Location](doc/source/images/workspace_details.png?raw=true) 를 선택하면 확인할 수 있습니다.
+ Workspace ID는 Conversation 워크스페이스에서 확장 메뉴(expansion menu)를 선택하고 `View details`를 선택하면 확인할 수 있습니다.
+    ![View Details Location](doc/source/images/workspace_details.png?raw=true) 
 9. [Blender](https://www.blender.org) 를 설치합니다.
 10. Unity 편집기 프로젝트 탭에서 Assets->Scenes->MainGame->MainMenu를 선택하고 두 번 클릭하여 장면을 로딩합니다.
 11. Play를 누릅니다.
