@@ -65,7 +65,7 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 5. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) 에 따라 단계 1에서 다운로드한 Watson Unity SDK를 프로젝트에 추가합니다.
 6. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) 에 따라 Speech To Text 및 Conversation 서비스 신임 정보 [IBM Bluemix](https://console.ng.bluemix.net/)에 있는)를 추가합니다..
 7. 설정(configuration) 창에서 `Advanced Mode`를 선택합니다.
-8. `Add Variable` 를 클릭하고 새 변수에 `ConversationV1_ID` 라고 이름을 지정한 다음 값을 Conversation 작업공간의 작업공간 ID로 설정합니다.
+8. `Add Variable` 를 클릭하고 새 변수에 `ConversationV1_ID` 라고 이름을 지정한 다음 값을 Conversation 워크스페이스의 Workspace ID로 설정합니다.
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
  워크스페이스 ID는 Conversation 워크스페이스에서 확장 메뉴(expansion menu)를 선택하고 `View details`.
     ![View Details Location](doc/source/images/workspace_details.png?raw=true) 를 선택하면 확인할 수 있습니다.
