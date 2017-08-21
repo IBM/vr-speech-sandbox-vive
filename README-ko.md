@@ -1,5 +1,7 @@
 # Watson 서비스를 사용하여 음성 기반의 VR경험 구현하기
 
+*다른 언어로 보기: [English](README.md).*
+
 이번 개발 과정에서는 Watson [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) 와 Watson  [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) 서비스를 기반으로 VR(Virtual Reality, 가상 현실) 게임을 만들어보겠습니다.
 
 우리가 실제 공간에 “있는” 것처럼 느껴지는 가상 현실 속에서 ‘말하기’는 다른 어떤 상호작용 방법보다 훨씬 자연스럽게 의사를 주고받을 수 있는 소통 수단입니다. 말하기 기능을 제공함으로써 개발자는 한층 몰입감 넘치는 경험을 만들어낼 수 있습니다. HTC Vive는 (Google Cardboard를 제외하고)
