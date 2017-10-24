@@ -79,10 +79,6 @@ $ git checkout tags/0.13.0
 11. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
 12. Press Play
 
-# Sample output
-
-[![](http://img.youtube.com/vi/FlMvLDw6cYc/0.jpg)](http://www.youtube.com/watch?v=FlMvLDw6cYc)
-
 # Links
 
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
