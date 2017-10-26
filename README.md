@@ -25,6 +25,9 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 
 * [Unity](https://unity3d.com/): A cross-platform game engine used to develop video games for PC, consoles, mobile devices and websites.
 
+# Watch the Video
+[![](https://i.ytimg.com/vi/o-OQc-hHtoU/0.jpg)](https://youtu.be/o-OQc-hHtoU)
+
 # Steps
 
 1. [Before you begin](#1-before-you-begin)
