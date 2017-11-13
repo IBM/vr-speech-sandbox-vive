@@ -2,19 +2,22 @@
 
 *Read this in other languages: [한국어](README-ko.md).*
 
-In this developer journey we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) services.
+In this Code Pattern we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) services.
 
 In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [400 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
 
-When the reader has completed this journey, they will understand how to:
+When the reader has completed this Code Pattern, they will understand how to:
 
 * Add IBM Watson Speech-to-Text and Conversation to a Virtual Reality environment build in Unity.
 
 ![](doc/source/images/architecture.png)
 
-### With Watson
+## Flow
 
-Want to take your Watson app to the next level? Looking to leverage Watson Brand assets? Join the [With Watson](https://www.ibm.com/watson/with-watson) program which provides exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
+1. User interacts in virtual reality and gives voice commands such as "Create a large black box".
+2. The HTC Vive Headset microphone picks up the voice command and the running application sends it to Watson Speech-to-Text.
+3. Watson Speech-to-Text converts the audio to text and returns it to the running Application that powers the HTC Vive.
+4. The application sends the text to Watson Conversation. Watson conversation returns the recognized intent "Create" and the entities "large", "black", and "box". The virtual reality application then displays the large black box (which falls from the sky).
 
 ## Included components
 
@@ -26,30 +29,31 @@ Want to take your Watson app to the next level? Looking to leverage Watson Brand
 * [Unity](https://unity3d.com/): A cross-platform game engine used to develop video games for PC, consoles, mobile devices and websites.
 
 # Watch the Video
+
 [![](https://i.ytimg.com/vi/o-OQc-hHtoU/0.jpg)](https://youtu.be/o-OQc-hHtoU)
 
 # Steps
 
 1. [Before you begin](#1-before-you-begin)
-2. [Create Bluemix services](#2-create-bluemix-services)
+2. [Create IBM Cloud services](#2-create-ibm-cloud-services)
 3. [Building and Running](#3-building-and-running)
 
 ## 1. Before You Begin
 
-* [IBM Bluemix Account](http://ibm.biz/Bdimr6)
+* [IBM Cloud Account](http://ibm.biz/Bdimr6)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
 * [HTC Vive](https://www.vive.com/us/product/)
 * [SteamVR](http://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
 * [Blender](https://www.blender.org/)
 
-## 2. Create Bluemix services
+## 2. Create IBM Cloud services
 
 On your local machine:
 1. `git clone https://github.com/IBM/vr-speech-sandbox-vive.git`
 2. `cd vr-speech-sandbox-vive`
 
-In [Bluemix](https://console.ng.bluemix.net/):
+In [IBM Cloud](https://console.ng.bluemix.net/):
 
 1. Create a [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) service instance.
 2. Create a [Conversation](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
@@ -72,7 +76,7 @@ $ git checkout tags/0.13.0
 4. Navigate to where you cloned this repository and open the "Creation Sandbox" directory.
 5. If prompted to upgrade the project to a newer Unity version, do so.
 6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-7. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to add your Speech To Text and Conversation service credentials (located on [IBM Bluemix](https://console.ng.bluemix.net/)).
+7. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to add your Speech To Text and Conversation service credentials (located on [IBM Cloud](https://console.ng.bluemix.net/)).
 8. Select `Advanced Mode` in the configuration window.
 9. Click `Add Variable` and name your new variable `ConversationV1_ID` then set its value to the Workspace ID of your Conversation workspace.
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
@@ -89,6 +93,12 @@ $ git checkout tags/0.13.0
 * [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
 * [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
+
+# Learn more
+
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
+* **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
 # License
 
