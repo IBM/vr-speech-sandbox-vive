@@ -30,25 +30,25 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 # 단계
 
 1. [시작 전 주의사항](#1-시작-전-주의사항)
-2. [Bluemix 서비스 생성](#2-bluemix-서비스-생성)
+2. [IBM Cloud 서비스 생성](#2-bluemix-서비스-생성)
 3. [빌드 및 실행](#3-빌드-및-실행)
 
 ## 1. 시작 전 주의사항
 
-* [IBM Bluemix 계정](http://ibm.biz/Bdimr6)
+* [IBM Cloud 계정](http://ibm.biz/Bdimr6)
 * ["VR 에 적합한" PC](https://www.vive.com/us/ready/)
 * [HTC Vive](https://www.vive.com/us/product/)
 * [SteamVR](http://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
 * [Blender](https://www.blender.org/)
 
-## 2. Bluemix 서비스 생성
+## 2. IBM Cloud 서비스 생성
 
 로컬 시스템에서:
 1. `git clone https://github.com/IBM/vr-speech-sandbox-vive.git`
 2. `cd vr-speech-sandbox-vive`
 
-[Bluemix](https://console.ng.bluemix.net/)에서:
+[IBM Cloud](https://console.ng.bluemix.net/)에서:
 
 1. [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) 서비스 인스턴스를 생성합니다.
 2. [Conversation](https://console.ng.bluemix.net/catalog/services/conversation/) 서비스 인스턴스를 생성합니다.
@@ -65,7 +65,7 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 3. 이 저장소를 복제한 곳으로 이동해서 "Creation Sandbox" 디렉토리를 엽니다.
 4. If prompted to upgrade the project to a newer Unity version, do so.
 5. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) 에 따라 단계 1에서 다운로드한 Watson Unity SDK를 프로젝트에 추가합니다.
-6. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) 에 따라 Speech To Text 및 Conversation 서비스 신임 정보 [IBM Bluemix](https://console.ng.bluemix.net/)에 있는)를 추가합니다..
+6. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) 에 따라 Speech To Text 및 Conversation 서비스 신임 정보 [IBM Cloud](https://console.ng.bluemix.net/)에 있는)를 추가합니다..
 7. 설정(configuration) 창에서 `Advanced Mode`를 선택합니다.
 8. `Add Variable` 를 클릭하고 새 변수에 `ConversationV1_ID` 라고 이름을 지정한 다음 값을 Conversation 워크스페이스의 Workspace ID로 설정합니다.
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
