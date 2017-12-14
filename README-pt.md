@@ -1,5 +1,6 @@
 ﻿# Crie comandos de voz para experiências de RV com os serviços do Watson 
 *Ler em outros idiomas: [한국어](README-ko.md).* 
+
 Nesta jornada do desenvolvedor, criaremos um game de Realidade Virtual com base nos serviços [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) do Watson e [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) do Watson. 
 Na Realidade Virtual, na qual você “habita” o espaço de verdade, a fala pode parecer uma interface mais natural do que outros métodos. A disponibilização de controles por fala permite que os desenvolvedores criem experiências mais imersivas. O HTC Vive é o 3º dispositivo mais popular de RV para colocar na cabeça (sem contar o Google Cardboard) e um candidato ideal para a interação por fala, tendo vendido cerca de [400 mil unidades](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) em 2016. 
 
