@@ -26,7 +26,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Featured technologies
 
-* [Unity](https://unity3d.com/): A cross-platform game engine used to develop video games for PC, consoles, mobile devices and websites.
+* [Unity](https://unity3d.com/): A cross-platform game engine used to develop video games for PC, Mac, consoles, mobile devices and websites.
 
 # Watch the Video
 
@@ -73,7 +73,7 @@ $ git checkout tags/0.13.0
 ```
 
 3. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
-4. Navigate to where you cloned this repository and open the "Creation Sandbox" directory.
+4. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
 5. If prompted to upgrade the project to a newer Unity version, do so.
 6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
 7. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to add your Speech To Text and Conversation service credentials (located on [IBM Cloud](https://console.ng.bluemix.net/)).
@@ -83,7 +83,7 @@ $ git checkout tags/0.13.0
  You can find your workspace ID by selecting the expansion menu on your conversation workspace and selecting `View details`.
     ![View Details Location](doc/source/images/workspace_details.png?raw=true)
 10. Install [Blender](https://www.blender.org)
-11. In the Unity editor project tab, select Assets->Scenes->MainGame->MainMenu and double click to load the scene.
+11. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
 12. Press Play
 
 # Links
