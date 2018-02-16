@@ -71,7 +71,7 @@ If you followed the previous steps you should already be inside your local clone
 3. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
 4. If prompted to upgrade the project to a newer Unity version, do so.
 5. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create and copy your Speech To Text and Conversation service credentials (located on [IBM Cloud](https://console.ng.bluemix.net/)).
+6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Conversation services and find their credentials (using [IBM Cloud](https://console.ng.bluemix.net/)).
 7. Open the script `vr-speech-sandbox-vive/Creation Sandbox/Assets/Scripts/SpeechSandboxStreaming.cs`
 8. Fill in the credentials for Speech to Text and Conversation, and the Conversation workspace id:
 ```
