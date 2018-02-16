@@ -7,6 +7,8 @@ using IBM.Watson.DeveloperCloud.Utilities;
 using IBM.Watson.DeveloperCloud.Services.Conversation.v1;
 using IBM.Watson.DeveloperCloud.Services.SpeechToText.v1;
 using FullSerializer;
+using IBM.Watson.DeveloperCloud.Logging;
+using IBM.Watson.DeveloperCloud.Connection;
 
 #pragma warning disable 414
 
@@ -15,23 +17,26 @@ public class VoiceSpawner : Widget {
     public GameManager gameManager;
     public AudioClip sorryClip;
     public List<AudioClip> helpClips;
-
-    private Conversation m_Conversation = new Conversation();
+    public ExampleStreaming streaming; 
+    
     private string m_WorkspaceID;
 
     [SerializeField]
     private Input m_SpeechInput = new Input("SpeechInput", typeof(SpeechToTextData), "OnSpeechInput");
     private fsSerializer _serializer = new fsSerializer();
+    private Conversation m_Conversation;
+
 
     #region InitAndLifecycle
     //------------------------------------------------------------------------------------------------------------------
     // Initialization and Lifecycle
     //------------------------------------------------------------------------------------------------------------------
 
-    protected override void Start()
+    public void Start()
     {
+        Credentials credentials = new Credentials("0f544b53-54d9-4901-9318-de2ae74427dd", "R0twYzLbHjZz", "https://gateway.watsonplatform.net/conversation/api");
+        m_Conversation = new Conversation(credentials);
         base.Start();
-        m_WorkspaceID = Config.Instance.GetVariableValue("ConversationV1_ID");
     }
 
     protected override string GetName()
@@ -44,9 +49,15 @@ public class VoiceSpawner : Widget {
     //------------------------------------------------------------------------------------------------------------------
     // Event Handler Functions
     //------------------------------------------------------------------------------------------------------------------
+    private void OnFail(RESTConnector.Error error, Dictionary<string, object> customData)
+    {
+        Log.Error("Conversation.OnFail()", "Error recieved: {0}", error.ToString());
+    }
 
     private void OnSpeechInput(Data data)
     {
+     
+   
         SpeechRecognitionEvent result = ((SpeechToTextData)data).Results;
         if (result != null && result.results.Length > 0)
         {
@@ -58,14 +69,15 @@ public class VoiceSpawner : Widget {
                     {
                         string text = alt.transcript;
                         Debug.Log("Result: " + text + " Confidence: " + alt.confidence);
-                        m_Conversation.Message(OnMessage, m_WorkspaceID, text);
+                        m_Conversation.Message(OnMessage, OnFail, m_WorkspaceID, text);
+                       
                     }
                 }
             }
         }
     }
 
-    void OnMessage(object resp, string customData)
+    void OnMessage(object resp, Dictionary<string, object> customData)
     {
         //  Convert resp to fsdata
 
@@ -90,7 +102,7 @@ public class VoiceSpawner : Widget {
             if (intent == "create")
             {
                 bool createdObject = false;
-                foreach (EntityResponse entity in messageResponse.entities)
+                foreach (RuntimeEntity entity in messageResponse.entities)
                 {
                     Debug.Log("entityType: " + entity.entity + " , value: " + entity.value);
                     if (entity.entity == "material")
@@ -137,3 +149,4 @@ public class VoiceSpawner : Widget {
     }
     #endregion
 }
+

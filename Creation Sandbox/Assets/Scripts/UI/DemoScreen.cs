@@ -73,7 +73,7 @@ public class DemoScreen : MonoBehaviour {
             }
             else
             {
-                camera = rigCamera.transform.parent.transform.parent.FindChild("Camera (eye)").GetComponent<Camera>();
+                camera = rigCamera.transform.parent.transform.parent.Find("Camera (eye)").GetComponent<Camera>();
             }
 
             takeScreenshot(camera);
