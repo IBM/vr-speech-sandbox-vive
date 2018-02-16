@@ -66,25 +66,29 @@ In [IBM Cloud](https://console.ng.bluemix.net/):
 If you followed the previous steps you should already be inside your local clone and ready to get started running the app from Unity.
 
 1. `git clone https://github.com/watson-developer-cloud/unity-sdk.git`
-2. It is important that you checkout a version of the Watson Unity SDK that will work with this code. The latest version of the SDK contains breaking changes, and will not work.
+
+2. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
+3. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
+4. If prompted to upgrade the project to a newer Unity version, do so.
+5. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
+6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create and copy your Speech To Text and Conversation service credentials (located on [IBM Cloud](https://console.ng.bluemix.net/)).
+7. Open the script `vr-speech-sandbox-vive/Creation Sandbox/Assets/Scripts/SpeechSandboxStreaming.cs`
+8. Fill in the credentials for Speech to Text and Conversation, and the Conversation workspace id:
 ```
-$ cd unity-sdk
-$ git checkout tags/0.13.0
+    private string stt_username = "blahblah";
+    private string stt_password = "abc123youandme";
+    private string stt_url = "https://stream.watsonplatform.net/speech-to-text/api";
+
+    private string convo_username = "dlkfjasdkfdkfjdkjf";
+    private string convo_password = "kdfjlsdjf";
+    private string convo_url = "https://gateway.watsonplatform.net/conversation/api";
+.....<snip>.....
+    private string convo_workspaceId = "kdjfls2323";
 ```
 
-3. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
-4. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
-5. If prompted to upgrade the project to a newer Unity version, do so.
-6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-7. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to add your Speech To Text and Conversation service credentials (located on [IBM Cloud](https://console.ng.bluemix.net/)).
-8. Select `Advanced Mode` in the configuration window.
-9. Click `Add Variable` and name your new variable `ConversationV1_ID` then set its value to the Workspace ID of your Conversation workspace.
-    ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
- You can find your workspace ID by selecting the expansion menu on your conversation workspace and selecting `View details`.
-    ![View Details Location](doc/source/images/workspace_details.png?raw=true)
-10. Install [Blender](https://www.blender.org)
-11. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
-12. Press Play
+9. Install [Blender](https://www.blender.org)
+10. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
+11. Press Play
 
 # Links
 
