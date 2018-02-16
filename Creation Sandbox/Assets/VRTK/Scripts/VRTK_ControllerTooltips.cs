@@ -98,7 +98,7 @@ namespace VRTK
 
             for (int i = 0; i < availableButtons.Length; i++)
             {
-                buttonTooltips[i] = transform.FindChild(availableButtons[i].ToString()).gameObject;
+                buttonTooltips[i] = transform.Find(availableButtons[i].ToString()).gameObject;
             }
         }
 
@@ -210,7 +210,7 @@ namespace VRTK
             }
             else
             {
-                returnTransform = transform.parent.FindChild("Model/" + findTransform + "/attach");
+                returnTransform = transform.parent.Find("Model/" + findTransform + "/attach");
             }
 
             return returnTransform;
