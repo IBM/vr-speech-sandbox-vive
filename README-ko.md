@@ -2,7 +2,7 @@
 
 *다른 언어로 보기: [English](README.md).*
 
-이번 개발 과정에서는 Watson [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) 와 Watson  [Conversation](https://www.ibm.com/watson/developercloud/conversation.html) 서비스를 기반으로 VR(Virtual Reality, 가상 현실) 게임을 만들어보겠습니다.
+이번 개발 과정에서는 Watson [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) 와 Watson  [Assistant for Business](https://www.ibm.com/watson/developercloud/conversation.html) 서비스를 기반으로 VR(Virtual Reality, 가상 현실) 게임을 만들어보겠습니다.
 
 우리가 실제 공간에 “있는” 것처럼 느껴지는 가상 현실 속에서 ‘말하기’는 다른 어떤 상호작용 방법보다 훨씬 자연스럽게 의사를 주고받을 수 있는 소통 수단입니다. 말하기 기능을 제공함으로써 개발자는 한층 몰입감 넘치는 경험을 만들어낼 수 있습니다. HTC Vive는 (Google Cardboard를 제외하고)
 현재 머리에 착용하는 VR 디바이스(HMD: Head Mounted Display) 중 전세계 3번째로 인기있는 제품으로, ‘말하기’ 기능을 적용하기에 가장 적합한 디바이스이며, 2016년 약
@@ -10,7 +10,7 @@
 
 이 과정을 마치면 다음 방법을 이해할 수 있습니다.
 
-* Unity에서 빌드한 가상 현실 환경에 IBM Watson Speech-to-Text 및 Conversation 추가.
+* Unity에서 빌드한 가상 현실 환경에 IBM Watson Speech-to-Text 및 Assistant for Business 추가.
 
 ![](doc/source/images/architecture.png)
 
@@ -20,7 +20,7 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 
 ## 구성요소
 
-* [IBM Watson Conversation](https://www.ibm.com/watson/developercloud/conversation.html): 음성이나 텍스트 기반의 대화형 프로그램 환경인 챗봇을 만들 수 있습니다.
+* [IBM Watson Assistant for Business](https://www.ibm.com/watson/developercloud/conversation.html): 음성이나 텍스트 기반의 대화형 프로그램 환경인 챗봇을 만들 수 있습니다.
 * [IBM Watson Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): 음성을 텍스트로 변환해 주는 서비스입니다.
 
 ## 주요 기술
@@ -51,10 +51,10 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 [IBM Cloud](https://console.ng.bluemix.net/)에서:
 
 1. [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) 서비스 인스턴스를 생성합니다.
-2. [Conversation](https://console.ng.bluemix.net/catalog/services/conversation/) 서비스 인스턴스를 생성합니다.
-3. 대시보드에 서비스가 표시되면 생성된 Conversation 서비스를 선택하고 !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true) 버튼을 클릭합니다.
-4. Conversation Tool에 로그인한 후 !["Import"](/doc/source/images/import_icon.png?raw=true) 단추를 클릭합니다.
-5. 이 저장소 복제본에 있는 Conversation  [`workspace.json`](data/workspace.json) 파일을 가져옵니다.
+2. [Assistant for Business](https://console.ng.bluemix.net/catalog/services/conversation/) 서비스 인스턴스를 생성합니다.
+3. 대시보드에 서비스가 표시되면 생성된 Assistant for Business 서비스를 선택하고 !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true) 버튼을 클릭합니다.
+4. Assistant for Business Tool에 로그인한 후 !["Import"](/doc/source/images/import_icon.png?raw=true) 단추를 클릭합니다.
+5. 이 저장소 복제본에 있는 Assistant for Business  [`workspace.json`](data/workspace.json) 파일을 가져옵니다.
 
 ## 3. 빌드 및 실행
 
@@ -65,11 +65,11 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 3. 이 저장소를 복제한 곳으로 이동해서 "Creation Sandbox" 디렉토리를 엽니다.
 4. If prompted to upgrade the project to a newer Unity version, do so.
 5. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) 에 따라 단계 1에서 다운로드한 Watson Unity SDK를 프로젝트에 추가합니다.
-6. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) 에 따라 Speech To Text 및 Conversation 서비스 신임 정보 [IBM Cloud](https://console.ng.bluemix.net/)에 있는)를 추가합니다..
+6. [이 지침](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) 에 따라 Speech To Text 및 Assistant for Business 서비스 신임 정보 [IBM Cloud](https://console.ng.bluemix.net/)에 있는)를 추가합니다..
 7. 설정(configuration) 창에서 `Advanced Mode`를 선택합니다.
-8. `Add Variable` 를 클릭하고 새 변수에 `ConversationV1_ID` 라고 이름을 지정한 다음 값을 Conversation 워크스페이스의 Workspace ID로 설정합니다.
+8. `Add Variable` 를 클릭하고 새 변수에 `Assistant for BusinessV1_ID` 라고 이름을 지정한 다음 값을 Assistant for Business 워크스페이스의 Workspace ID로 설정합니다.
     ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true)
- Workspace ID는 Conversation 워크스페이스에서 확장 메뉴(expansion menu)를 선택하고 `View details`를 선택하면 확인할 수 있습니다.
+ Workspace ID는 Assistant for Business 워크스페이스에서 확장 메뉴(expansion menu)를 선택하고 `View details`를 선택하면 확인할 수 있습니다.
     ![View Details Location](doc/source/images/workspace_details.png?raw=true) 
 9. [Blender](https://www.blender.org) 를 설치합니다.
 10. Unity 편집기 프로젝트 탭에서 Assets->Scenes->MainGame->MainMenu를 선택하고 두 번 클릭하여 장면을 로딩합니다.
