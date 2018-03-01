@@ -94,9 +94,12 @@ If you followed the previous steps you should already be inside your local clone
 
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
 * [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca)
-* [Dev Blog](https://www.ibm.com/innovation/milab/watson-speech-virtual-reality-unity/)
-* [Case Study](https://www.ibm.com/innovation/milab/work/speech-sandbox/)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
+* [Blog](https://developer.ibm.com/code/2017/04/29/easily-set-voice-commands-virtual-reality-watson/)
+* [Another blog!](https://developer.ibm.com/code/2017/06/10/create-affordable-virtual-reality-experience-google-cardboard/)
+* [Article about VR Speech Sandbox](https://www.techleer.com/articles/385-ibm-watson-to-get-a-new-vr-speech-sandbox-feature/)
+* [News article about Star Trek Bridge Crew](https://www.prnewswire.com/news-releases/ibm-and-ubisoft-partner-to-bring-voice-command-with-watson-to-virtual-reality-in-star-trek-bridge-crew-300455924.html)
+
 
 # Learn more
 
