@@ -65,8 +65,10 @@ In [IBM Cloud](https://console.ng.bluemix.net/):
 
 If you followed the previous steps you should already be inside your local clone and ready to get started running the app from Unity.
 
-1. `git clone https://github.com/watson-developer-cloud/unity-sdk.git`
+> Note: This has been compiled and tested using Unity 5.6.5f1 and Watson Unity SDK from the Unity asset Store (or alternately use the develop branch)
 
+1. Either download the Watson Unity SDK from the Unity asset store or perform the following:
+`git clone https://github.com/watson-developer-cloud/unity-sdk.git`
 2. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
 3. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
 4. If prompted to upgrade the project to a newer Unity version, do so.
@@ -75,15 +77,18 @@ If you followed the previous steps you should already be inside your local clone
 7. Open the script `vr-speech-sandbox-vive/Creation Sandbox/Assets/Scripts/SpeechSandboxStreaming.cs`
 8. Fill in the credentials for Speech to Text and Conversation, and the Conversation workspace id:
 ```
-    private string stt_username = "blahblah";
-    private string stt_password = "abc123youandme";
+    private string stt_username = "";
+    private string stt_password = "";
+    // Change stt_url if different from below
     private string stt_url = "https://stream.watsonplatform.net/speech-to-text/api";
 
-    private string convo_username = "dlkfjasdkfdkfjdkjf";
-    private string convo_password = "kdfjlsdjf";
+    private string convo_username = "";
+    private string convo_password = "";
+    // Change convo_url if different from below
     private string convo_url = "https://gateway.watsonplatform.net/conversation/api";
-.....<snip>.....
-    private string convo_workspaceId = "kdjfls2323";
+    // Change  _conversationVersionDate if different from below
+    private string _conversationVersionDate = "2017-05-26";
+    private string convo_workspaceId = "";
 ```
 
 9. Install [Blender](https://www.blender.org)

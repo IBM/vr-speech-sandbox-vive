@@ -38,14 +38,22 @@ public class SpeechSandboxStreaming : MonoBehaviour
 
     [SerializeField]
     private fsSerializer _serializer = new fsSerializer();
+    private SpeechToText _speechToText;
+    private Conversation _conversation;
+
     private string stt_username = "";
     private string stt_password = "";
-    private string stt_url = "";
-
+    // Change stt_url if different from below
+    private string stt_url = "https://stream.watsonplatform.net/speech-to-text/api";
+     
     private string convo_username = "";
     private string convo_password = "";
-    private string convo_url = "";
- 
+    // Change convo_url if different from below
+    private string convo_url = "https://gateway.watsonplatform.net/conversation/api";
+    // Change  _conversationVersionDate if different from below
+    private string _conversationVersionDate = "2017-05-26";
+    private string convo_workspaceId = "";
+
     public Text ResultsField;
 
     private int _recordingRoutine = 0;
@@ -54,11 +62,7 @@ public class SpeechSandboxStreaming : MonoBehaviour
     private int _recordingBufferSize = 1;
     private int _recordingHZ = 22050;
 
-    private SpeechToText _speechToText;
-    private Conversation _conversation;
-    private string _conversationVersionDate = "2017-05-26";
-    private string convo_workspaceId = "";
-
+   
     void Start()
     {
         LogSystem.InstallDefaultReactors();
