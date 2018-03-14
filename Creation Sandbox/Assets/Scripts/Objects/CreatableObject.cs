@@ -198,6 +198,8 @@ public class CreatableObject : VRTK_InteractableObject
     }
     #endregion
 
+    // This is not applicable without more objects for Food or Animals, but keep as exmample
+    /*
     #region Triggers
     public virtual void OnTriggerEnter(Collider collider)
     {
@@ -212,4 +214,5 @@ public class CreatableObject : VRTK_InteractableObject
         }
     }
     #endregion
+    */
 }
