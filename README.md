@@ -30,7 +30,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Watch the Video
 
-[![](https://i.ytimg.com/vi/o-OQc-hHtoU/0.jpg)](https://youtu.be/o-OQc-hHtoU)
+[![](https://i.ytimg.com/vi/h5nY3st62Qg/hqdefault.jpg)](https://youtu.be/h5nY3st62Qg)
 
 # Steps
 
@@ -97,6 +97,7 @@ If you followed the previous steps you should already be inside your local clone
 
 # Links
 
+* [Youtube Video](https://youtu.be/h5nY3st62Qg)
 * [Demo of Cardboard version on Youtube](https://www.youtube.com/watch?v=rZFpUpy4y0g)
 * [Viveport](https://www.viveport.com/apps/bbde0cff-98c1-4117-acd8-e808ded515ca)
 * [Watson Unity SDK](https://github.com/watson-developer-cloud/unity-sdk)
