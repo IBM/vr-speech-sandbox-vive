@@ -2,7 +2,7 @@
 
 *다른 언어로 보기: [English](README.md).*
 
-이번 개발 과정에서는 Watson [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) 와 Watson  [Assistant](https://www.ibm.com/watson/developercloud/Assistant.html) 서비스를 기반으로 VR(Virtual Reality, 가상 현실) 게임을 만들어보겠습니다.
+이번 개발 과정에서는 Watson [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) 와 Watson  [Assistant](https://www.ibm.com/watson/developercloud/conversation.html) 서비스를 기반으로 VR(Virtual Reality, 가상 현실) 게임을 만들어보겠습니다.
 
 우리가 실제 공간에 “있는” 것처럼 느껴지는 가상 현실 속에서 ‘말하기’는 다른 어떤 상호작용 방법보다 훨씬 자연스럽게 의사를 주고받을 수 있는 소통 수단입니다. 말하기 기능을 제공함으로써 개발자는 한층 몰입감 넘치는 경험을 만들어낼 수 있습니다. HTC Vive는 (Google Cardboard를 제외하고)
 현재 머리에 착용하는 VR 디바이스(HMD: Head Mounted Display) 중 전세계 3번째로 인기있는 제품으로, ‘말하기’ 기능을 적용하기에 가장 적합한 디바이스이며, 2016년 약
@@ -20,7 +20,7 @@ Watson 앱을 한 레벨 위로 끌어올리고 싶으신가요? 아니면 Watso
 
 ## 구성요소
 
-* [IBM Watson Assistant](https://www.ibm.com/watson/developercloud/Assistant.html): 음성이나 텍스트 기반의 대화형 프로그램 환경인 챗봇을 만들 수 있습니다.
+* [IBM Watson Assistant](https://www.ibm.com/watson/developercloud/conversation.html): 음성이나 텍스트 기반의 대화형 프로그램 환경인 챗봇을 만들 수 있습니다.
 * [IBM Watson Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): 음성을 텍스트로 변환해 주는 서비스입니다.
 
 ## 주요 기술
