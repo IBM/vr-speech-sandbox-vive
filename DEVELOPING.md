@@ -5,7 +5,7 @@ Here is a general overview of some of the more important directories in the proj
 ```
 .
 ├── data
-│   └── workspace.json      // an export of a basic Speech Sandbox conversation setup
+│   └── workspace.json      // an export of a basic Speech Sandbox Assistant setup
 ├── Creation Sandbox        // the Unity project
 │   ├── Assets                  // contains all project assets
 │   │   ├── _Scenes                 // all game scenes
