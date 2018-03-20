@@ -31,7 +31,7 @@ Na sua máquina local:
 2. `cd vr-speech-sandbox-vive`
 No [Bluemix](https://console.ng.bluemix.net/):
 1. Crie uma instância de serviço do [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/).
-2. Crie uma instância de serviço do [Assistant](https://console.ng.bluemix.net/catalog/services/Assistant/).
+2. Crie uma instância de serviço do [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/).
 3. Quando vir os serviços no painel, selecione o serviço Assistant que foi criado e clique no botão !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true).
 4. Depois de efetuar login na Assistant Tool, clique no botão !["Import"](/doc/source/images/import_icon.png?raw=true).
 5. Importe o arquivo do Assistant [`workspace.json`](data/workspace.json) localizado no seu clone deste repositório. 
@@ -44,7 +44,7 @@ Se você seguiu as etapas anteriores, já deve estar dentro do seu clone local e
 5. Siga [estas instruções](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) para incluir no projeto o SDK do Watson Unity transferido por download na 1ª etapa. 
 6. Siga [estas instruções](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) para incluir suas credenciais dos serviços Speech To Text e Assistant (localizadas no [IBM Bluemix](https://console.ng.bluemix.net/)). 
 7. Selecione `Advanced Mode` na janela de configuração.
-8. Clique em `Add Variable` e nomeie sua nova variável `AssistantV1_ID` e, em seguida, defina seu valor como o ID da área de trabalho do Assistant. ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true) Para localizar o ID da área de trabalho, selecione o menu de expansão na área de trabalho do Assistant e selecione `View details`. 
+8. Clique em `Add Variable` e nomeie sua nova variável `ConversationV1_ID` e, em seguida, defina seu valor como o ID da área de trabalho do Conversation. ![Variable Configuration Example](doc/source/images/add_variable.png?raw=true) Para localizar o ID da área de trabalho, selecione o menu de expansão na área de trabalho do Conversation e selecione `View details`. 
 ![View Details Location](doc/source/images/workspace_details.png?raw=true)
 9. Instale o [Blender](https://www.blender.org)
 10. Na guia do projeto do editor do Unity, selecione Assets-&gt;Scenes-&gt;MainGame-&gt;MainMenu e clique duas vezes para carregar a cena.
