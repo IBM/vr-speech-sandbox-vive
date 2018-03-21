@@ -1,6 +1,6 @@
 # Create voice commands for VR experiences with Watson services
 
-*Read this in other languages: [한국어](README-ko.md),[中国](README-cn.md).*
+*Read this in other languages: [한국어](README-ko.md), [中国](README-cn.md).*
 
 > Watson Conversation is now Watson Assistant. Although some images in this code pattern may show the service as Watson Conversation, the steps and processes will still work.
 
