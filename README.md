@@ -58,44 +58,40 @@ On your local machine:
 In [IBM Cloud](https://console.ng.bluemix.net/):
 
 1. Create a [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) service instance.
-2. Create a [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
+2. Create an [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
 3. Once you see the services in the Dashboard, select the Assistant service you created and click the !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true) button.
 4. After logging into the Assistant Tool, click the !["Import"](/doc/source/images/import_icon.png?raw=true) button.
 5. Import the Assistant [`workspace.json`](data/workspace.json) file located in your clone of this repository.
 
 ## 3. Building and Running
 
-If you followed the previous steps you should already be inside your local clone and ready to get started running the app from Unity.
+> Note: This has been compiled and tested using Unity 2018.2.0f2 and Watson Unity SDK from the Unity asset Store as of July 24, 2018 and tested with the `develop` branch of the github unity-sdk as of `commit 44d8df33922 July 12`.
 
-> Note: This has been compiled and tested using Unity 5.6.5f1 and Watson Unity SDK from the Unity asset Store (or alternately use the develop branch)
+> Note: If you are in *any* IBM Cloud region other than US-South you *must* use Unity 2018.2 or higher. This is because Unity 2018.2 or higher is needed for TLS 1.2, which is the only TLS version available in all regions other than US-South.
 
 1. Either download the Watson Unity SDK from the Unity asset store or perform the following:
+
 `git clone https://github.com/watson-developer-cloud/unity-sdk.git`
-2. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
-3. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
-4. If prompted to upgrade the project to a newer Unity version, do so.
-5. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-6. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Assistant services and find their credentials (using [IBM Cloud](https://console.ng.bluemix.net/)).
-7. Open the script `vr-speech-sandbox-vive/Creation Sandbox/Assets/Scripts/SpeechSandboxStreaming.cs`
-8. Fill in the credentials for Speech to Text and Assistant, and the Assistant workspace id:
-```
-    private string stt_username = "";
-    private string stt_password = "";
-    // Change stt_url if different from below
-    private string stt_url = "https://stream.watsonplatform.net/speech-to-text/api";
 
-    private string convo_username = "";
-    private string convo_password = "";
-    // Change convo_url if different from below
-    private string convo_url = "https://gateway.watsonplatform.net/conversation/api";
-    // Change  _conversationVersionDate if different from below
-    private string _conversationVersionDate = "2017-05-26";
-    private string convo_workspaceId = "";
-```
+For the github version make sure you are on the develop branch.
+1. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
+1. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
+1. If prompted to upgrade the project to a newer Unity version, do so.
+1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
+1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Watson Assistant services and find their credentials (using [IBM Cloud](https://console.bluemix.net)
+ You can find your workspace ID by selecting the expansion menu on your assistant workspace and selecting `View details`.
 
-9. Install [Blender](https://www.blender.org)
-10. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
-11. Press Play
+    ![View Details Location](https://github.com/IBM/pattern-images/blob/master/watson-assistant/GetAssistantDetails.png)
+
+1. In the Unity Hierarchy view, click on `Player` and then the `Streaming Speech` object.
+1. In the Inspector you will see Variables for `Speech To Text` and `Watson Assistant` and either `CF Authentication` for the Cloud Foundry username and password, or the `IAM Authentication` if you have the IAM apikey. Since you only have only one version of these credentials, fill out only one of the two for each service.
+1. Fill out the `Speech To Text Service Url`, the `Assistant Service Url`, the `Assistant Workspace Id`, and the `Assistant Version Date`. There are tool tips which will show help and any defaults.
+
+![](https://github.com/IBM/pattern-images/blob/master/Unity/UnitySpeechSandboxCreds.png)
+
+1. Install [Blender](https://www.blender.org)
+1. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
+1. Press Play
 
 # Links
 
