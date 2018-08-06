@@ -83,11 +83,11 @@ For the github version make sure you are on the develop branch.
 
     ![View Details Location](https://github.com/IBM/pattern-images/blob/master/watson-assistant/GetAssistantDetails.png)
 
-1. In the Unity Hierarchy view, click on `Player` and then the `Streaming Speech` object.
+1. In the Unity Hierarchy view, click on `_Scenes`->`MainGame`->`MainMenu` and then the `SaveCredentials` object.
 1. In the Inspector you will see Variables for `Speech To Text` and `Watson Assistant` and either `CF Authentication` for the Cloud Foundry username and password, or the `IAM Authentication` if you have the IAM apikey. Since you only have only one version of these credentials, fill out only one of the two for each service.
 1. Fill out the `Speech To Text Service Url`, the `Assistant Service Url`, the `Assistant Workspace Id`, and the `Assistant Version Date`. There are tool tips which will show help and any defaults.
 
-![](https://github.com/IBM/pattern-images/blob/master/Unity/UnitySpeechSandboxCreds.png)
+![](doc/source/images/SaveCredentials.PNG)
 
 1. Install [Blender](https://www.blender.org)
 1. In the Unity editor project tab, select `Assets`->`Scenes`->`MainGame`->`MainMenu` and double click to load the scene.
