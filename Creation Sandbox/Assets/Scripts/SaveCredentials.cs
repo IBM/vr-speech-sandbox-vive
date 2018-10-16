@@ -37,7 +37,7 @@ public class SaveCredentials : MonoBehaviour
     public string assistantUsername = "";
 
     [Tooltip("The authentication password.")]
-    public string assitantPassword = "";
+    public string assistantPassword = "";
 
     [Header("IAM Authentication")]
     [Tooltip("The IAM apikey.")]
@@ -56,7 +56,7 @@ public class SaveCredentials : MonoBehaviour
     private static string assistantWorkspaceIdKey = "ASSISTANT_WORKSPACE_ID";
     private static string assistantVersionDateKey = "ASSISTANT_VERSION_DATE";
     private static string assistantUsernameKey = "ASSISTANT_USERNAME";
-    private static string assitantPasswordKey = "ASSISTANT_PASSWORD";
+    private static string assistantPasswordKey = "ASSISTANT_PASSWORD";
     private static string assistantIamApikeyKey = "ASSISTANT_IAM_APIKEY";
     private static string assistantIamUrlKey = "ASSISTANT_IAM_URL";
 
@@ -73,7 +73,7 @@ public class SaveCredentials : MonoBehaviour
         PlayerPrefs.SetString(assistantWorkspaceIdKey, assistantWorkspaceId);
         PlayerPrefs.SetString(assistantVersionDateKey, assistantVersionDate);
         PlayerPrefs.SetString(assistantUsernameKey, assistantUsername);
-        PlayerPrefs.SetString(assitantPasswordKey, assitantPassword);
+        PlayerPrefs.SetString(assistantPasswordKey, assistantPassword);
         PlayerPrefs.SetString(assistantIamApikeyKey, assistantIamApikey);
         PlayerPrefs.SetString(assistantIamUrlKey, assistantIamUrl);
 
@@ -137,10 +137,10 @@ public class SaveCredentials : MonoBehaviour
             assistantUsername = PlayerPrefs.GetString(assistantUsernameKey);
         }
 
-        if (PlayerPrefs.HasKey(assitantPasswordKey))
+        if (PlayerPrefs.HasKey(assistantPasswordKey))
         {
             // load playerName from the PlayerPrefs file.
-            assitantPassword = PlayerPrefs.GetString(assitantPasswordKey);
+            assistantPassword = PlayerPrefs.GetString(assistantPasswordKey);
         }
 
         if (PlayerPrefs.HasKey(assistantIamApikeyKey))
