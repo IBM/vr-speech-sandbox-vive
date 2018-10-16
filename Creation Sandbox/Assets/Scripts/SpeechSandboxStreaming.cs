@@ -77,10 +77,10 @@ public class SpeechSandboxStreaming : MonoBehaviour
 
         Credentials asst_credentials = null;
         //  Create credential and instantiate service
-        if (!string.IsNullOrEmpty(saveCredentials.assistantUsername) && !string.IsNullOrEmpty(saveCredentials.assitantPassword))
+        if (!string.IsNullOrEmpty(saveCredentials.assistantUsername) && !string.IsNullOrEmpty(saveCredentials.assistantPassword))
         {
             //  Authenticate using username and password
-            asst_credentials = new Credentials(saveCredentials.assistantUsername, saveCredentials.assitantPassword, saveCredentials.assistantServiceUrl);
+            asst_credentials = new Credentials(saveCredentials.assistantUsername, saveCredentials.assistantPassword, saveCredentials.assistantServiceUrl);
         }
         else if (!string.IsNullOrEmpty(saveCredentials.assistantIamApikey))
         {
