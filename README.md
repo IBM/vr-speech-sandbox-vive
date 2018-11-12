@@ -65,7 +65,7 @@ In [IBM Cloud](https://console.ng.bluemix.net/):
 
 ## 3. Building and Running
 
-> Note: This has been compiled and tested using Unity 2018.2.0f2 and Watson Unity SDK from the Unity asset Store as of July 24, 2018 and tested with the `develop` branch of the github unity-sdk as of `commit 44d8df33922 July 12`.
+> Note: This has been compiled and tested using Unity 2018.2.14f1 and Watson Unity SDK from the Unity asset Store as of July 24, 2018 and tested with the `develop` branch of the github unity-sdk as of `commit d1ce5607ebb77 Nov 1 2018`.
 
 > Note: If you are in *any* IBM Cloud region other than US-South you *must* use Unity 2018.2 or higher. This is because Unity 2018.2 or higher is needed for TLS 1.2, which is the only TLS version available in all regions other than US-South.
 
