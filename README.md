@@ -2,9 +2,7 @@
 
 *Read this in other languages: [한국어](README-ko.md), [中国](README-cn.md).*
 
-> Watson Conversation is now Watson Assistant. Although some images in this code pattern may show the service as Watson Conversation, the steps and processes will still work.
-
-In this Code Pattern we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html) and Watson's [Assistant](https://www.ibm.com/watson/developercloud/conversation.html) services.
+In this Code Pattern we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/services/speech-to-text/) and Watson's [Assistant](https://www.ibm.com/cloud/watson-assistant/) services.
 
 In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [400 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
 
@@ -23,8 +21,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Included components
 
-* [IBM Watson Assistant](https://www.ibm.com/watson/developercloud/conversation.html): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
-* [IBM Watson Speech-to-Text](https://www.ibm.com/watson/developercloud/speech-to-text.html): Converts audio voice into written text.
+* [IBM Watson Assistant](https://www.ibm.com/cloud/watson-assistant/): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
+* [IBM Watson Speech-to-Text](https://www.ibm.com/watson/services/speech-to-text/): Converts audio voice into written text.
 
 ## Featured technologies
 
@@ -42,7 +40,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## 1. Before You Begin
 
-* [IBM Cloud Account](http://ibm.biz/Bdimr6)
+* [IBM Cloud Account](https://www.ibm.com/cloud/)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
 * [HTC Vive](https://www.vive.com/us/product/)
 * [SteamVR](http://store.steampowered.com/steamvr)
@@ -52,16 +50,34 @@ When the reader has completed this Code Pattern, they will understand how to:
 ## 2. Create IBM Cloud services
 
 On your local machine:
-1. `git clone https://github.com/IBM/vr-speech-sandbox-vive.git`
-2. `cd vr-speech-sandbox-vive`
+```bash
+git clone https://github.com/IBM/vr-speech-sandbox-vive.git
+cd vr-speech-sandbox-vive
+```
 
 In [IBM Cloud](https://console.ng.bluemix.net/):
 
-1. Create a [Speech-To-Text](https://console.ng.bluemix.net/catalog/speech-to-text/) service instance.
-2. Create an [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
-3. Once you see the services in the Dashboard, select the Assistant service you created and click the !["Launch Tool"](/doc/source/images/workspace_launch.png?raw=true) button.
-4. After logging into the Assistant Tool, click the !["Import"](/doc/source/images/import_icon.png?raw=true) button.
-5. Import the Assistant [`workspace.json`](data/workspace.json) file located in your clone of this repository.
+* Create a [Speech-To-Text](https://console.bluemix.net/catalog/services/speech-to-text) service instance.
+* Create an [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
+
+#### Import the Assistant workspace.json:
+
+* Find the Assistant service in your IBM Cloud Dashboard.
+* Click on the service and then click on `Launch tool`.
+* Go to the `Skills` tab.
+* Click `Create new`
+* Click the `Import skill` tab.
+* Click `Choose JSON file`, go to your cloned repo dir, and `Open` the workspace.json file in [`data/workspace.json`](data/workspace.json).
+* Select `Everything` and click `Import`.
+
+To find the `WORKSPACE_ID` for Watson Assistant:
+
+* Go back to the `Skills` tab.
+* Find the card for the workspace you would like to use. Look for `IBM Speech Sandbox Vive`.
+* Click on the three dots in the upper right-hand corner of the card and select `View API Details`.
+* Copy the `Workspace ID` GUID. Save it configuration later.
+
+!["Get Workspace ID"](https://github.com/IBM/pattern-utils/blob/master/watson-assistant/assistantPostSkillGetID.gif)
 
 ## 3. Building and Running
 
@@ -71,7 +87,9 @@ In [IBM Cloud](https://console.ng.bluemix.net/):
 
 1. Either download the Watson Unity SDK from the Unity asset store or perform the following:
 
-`git clone https://github.com/watson-developer-cloud/unity-sdk.git`
+```bash
+git clone https://github.com/watson-developer-cloud/unity-sdk.git
+```
 
 For the github version make sure you are on the develop branch.
 1. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
@@ -107,7 +125,7 @@ For the github version make sure you are on the develop branch.
 
 # Learn more
 
-* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/code/technologies/artificial-intelligence/).
+* **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/).
 * **AI and Data Code Pattern Playlist**: Bookmark our [playlist](https://www.youtube.com/playlist?list=PLzUbsvIyrNfknNewObx5N7uGZ5FKH0Fde) with all of our Code Pattern videos
 * **With Watson**: Want to take your Watson app to the next level? Looking to utilize Watson Brand assets? [Join the With Watson program](https://www.ibm.com/watson/with-watson/) to leverage exclusive brand, marketing, and tech resources to amplify and accelerate your Watson embedded commercial solution.
 
