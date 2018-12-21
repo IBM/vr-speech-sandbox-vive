@@ -85,13 +85,13 @@ To find the `WORKSPACE_ID` for Watson Assistant:
 
 > Note: If you are in *any* IBM Cloud region other than US-South you *must* use Unity 2018.2 or higher. This is because Unity 2018.2 or higher is needed for TLS 1.2, which is the only TLS version available in all regions other than US-South.
 
-1. Either download the Watson Unity SDK from the Unity asset store or perform the following:
+1. Download the [Unity SDK for Watson](https://github.com/watson-developer-cloud/unity-sdk) or perform the following:
 
 ```bash
 git clone https://github.com/watson-developer-cloud/unity-sdk.git
 ```
 
-For the github version make sure you are on the develop branch.
+Make sure you are on the develop branch.
 1. Open Unity and inside the project launcher select the ![Open](doc/source/images/unity_open.png?raw=true) button.
 1. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
 1. If prompted to upgrade the project to a newer Unity version, do so.
