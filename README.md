@@ -4,7 +4,7 @@
 
 In this Code Pattern we will create a Virtual Reality game based on Watson's [Speech-to-Text](https://www.ibm.com/watson/services/speech-to-text/) and Watson's [Assistant](https://www.ibm.com/cloud/watson-assistant/) services.
 
-In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [400 thousand units](http://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
+In Virtual Reality, where you truly “inhabit” the space, speech can feel like a more natural interface than other methods. Providing speech controls allows developers to create more immersive experiences. The HTC Vive is the 3rd most popular head-mounted VR devices (not including Google Cardboard) and an ideal candidate for Speech interaction, selling roughly [400 thousand units](https://www.hypergridbusiness.com/2016/11/report-98-of-vr-headsets-sold-this-year-are-for-mobile-phones) in 2016.
 
 When the reader has completed this Code Pattern, they will understand how to:
 
@@ -42,8 +42,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 * [IBM Cloud Account](https://www.ibm.com/cloud/)
 * ["VR Ready" PC](https://www.vive.com/us/ready/)
-* [HTC Vive](https://www.vive.com/us/product/)
-* [SteamVR](http://store.steampowered.com/steamvr)
+* [HTC Vive](https://www.vive.com/us/product/vive-virtual-reality-system/)
+* [SteamVR](https://store.steampowered.com/steamvr)
 * [Unity](https://unity3d.com/get-unity/download)
 * [Blender](https://www.blender.org/)
 
@@ -55,10 +55,10 @@ git clone https://github.com/IBM/vr-speech-sandbox-vive.git
 cd vr-speech-sandbox-vive
 ```
 
-In [IBM Cloud](https://console.ng.bluemix.net/):
+In [IBM Cloud](https://cloud.ibm.com):
 
-* Create a [Speech-To-Text](https://console.bluemix.net/catalog/services/speech-to-text) service instance.
-* Create an [Assistant](https://console.ng.bluemix.net/catalog/services/conversation/) service instance.
+* Create a [Speech-To-Text](https://cloud.ibm.com/catalog/services/speech-to-text) service instance.
+* Create an [Assistant](https://cloud.ibm.com/catalog/services/conversation/) service instance.
 
 #### Import the Assistant workspace.json:
 
@@ -96,10 +96,10 @@ Make sure you are on the develop branch.
 1. Navigate to where you cloned this repository and open the `Creation Sandbox` directory.
 1. If prompted to upgrade the project to a newer Unity version, do so.
 1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#getting-the-watson-sdk-and-adding-it-to-unity) to add the Watson Unity SDK downloaded in step 1 to the project.
-1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Watson Assistant services and find their credentials (using [IBM Cloud](https://console.bluemix.net)
+1. Follow [these instructions](https://github.com/watson-developer-cloud/unity-sdk#configuring-your-service-credentials) to create your Speech To Text and Watson Assistant services and find their credentials (using [IBM Cloud](https://cloud.ibm.com)
  You can find your workspace ID by selecting the expansion menu on your assistant workspace and selecting `View details`.
 
-    ![View Details Location](https://github.com/IBM/pattern-images/blob/master/watson-assistant/GetAssistantDetails.png)
+    ![View Details Location](https://github.com/IBM/pattern-utils/blob/master/watson-assistant/GetAssistantDetails.png)
 
 1. In the Unity Hierarchy view, click on `_Scenes`->`MainGame`->`MainMenu` and then the `SaveCredentials` object.
 1. In the Inspector you will see Variables for `Speech To Text` and `Watson Assistant` and either `CF Authentication` for the Cloud Foundry username and password, or the `IAM Authentication` if you have the IAM apikey. Since you only have only one version of these credentials, fill out only one of the two for each service.
@@ -131,6 +131,6 @@ Make sure you are on the develop branch.
 
 # License
 
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
