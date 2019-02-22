@@ -1,3 +1,5 @@
+# ARCHIVED and UNMAINTAINED!  Please note that this repository is no longer being maintained. For a current VR app please see https://github.com/IBM/vr-speech-sandbox-cardboard
+
 # Create voice commands for VR experiences with Watson services
 
 *Read this in other languages: [한국어](README-ko.md), [中国](README-cn.md).*
