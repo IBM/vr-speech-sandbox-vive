@@ -1,6 +1,5 @@
 # WARNING: This repository is no longer maintained :warning:
-
-> This repository will not be updated. The repository will be kept available in read-only mode. Refer to https://github.com/IBM/vr-speech-sandbox-cardboard/ for a similar example.
+> This repository will not be updated. The repository will be kept available in read-only mode.
 
 # Create voice commands for VR experiences with Watson services
 
